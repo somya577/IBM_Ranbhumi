@@ -1,0 +1,227 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.card{
+    margin-top: 100px;
+
+}
+.bgimg{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/match/backim5.jpg");
+    background-size: cover;
+ 
+    background-position:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;    
+   
+   
+    
+
+   
+}
+.bgimg::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+     background-color: rgba(0,0,0,0.87);
+   
+    
+
+} 
+#logo{
+    position: absolute;
+    z-index: 3;
+    height: 150px;
+    width: 400px;
+    
+   
+    
+    margin-top: -590px;
+}
+
+.card{
+    z-index: 2;
+    padding: 15px;
+    
+    
+   
+}
+.slide2{
+    margin-bottom: 100px;
+}
+.card img{
+    
+    /* backface-visibility: hidden; */
+   height: 350px;
+   width: 240px;
+   /* border: solid rgba(167, 9, 9, 0.619) 2px; */
+   border-radius: 10px;
+   /* backdrop-filter:var(200px); */
+   box-shadow: 3px 3px 12px  rgba(172, 19, 214, 0.452);
+
+
+  
+
+}
+
+.card:hover{
+    transform: translateY(20px);
+
+}
+
+.card::before{
+    /* backface-visibility: hidden; */
+    content: "";
+    position: absolute;
+    /* top: 30px;
+    left: 30px; */
+    display: block;
+    width: 240px;
+   height: 350px;
+   
+    background:linear-gradient(to bottom,rgba(12, 12, 12, 0.719),rgba(196, 11, 225, 0.568));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 10px;
+}
+.card:hover::before{
+    opacity: 2;
+}
+.info{
+    position: relative;
+    bottom: 150px;
+    left: 20px;
+    z-index: 3;
+    color: #fff;
+    opacity: 1;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    display: flex;
+    flex-direction: column;
+
+}
+.btn {
+    position: relative;
+    text-decoration: none;
+    color: #fdfbfb;
+    height: 35px;
+    width: 100px;
+    background-color: #07070789;
+    margin-left: 70px;
+    
+}
+
+.info a{
+    position: relative;
+    margin-top: 15px;
+    border-left:  solid red 2px;
+    border-bottom:  solid red 2px;
+    border-top:  solid red 2px;
+    border-right:  solid red 2px;
+    border-radius: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding:5px ;
+
+   
+   
+}
+.btn:hover{
+    background:linear-gradient(to top left,rgba(0, 0, 0, 0.555),rgb(24, 230, 24));
+    color: rgb(236, 221, 221);
+    transition: .5s;
+}
+.info h1{
+    color: #f4ce0d;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.info p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.bgimg1{
+    display: flex;
+    justify-content: center;
+    background: url("../img/match/backim5.jpg");
+    justify-content: space-evenly;
+}
+bgimg1::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+     background-color: rgba(0,0,0,0.77);
+   
+    
+
+} 
+
+.navbar{
+    /* background: linear-gradient(to top left, rgba(61, 5, 61, 0.386), rgba(0, 0, 0, 0.479)); */
+    
+   position: absolute;
+    width: 100%;
+    
+    padding: 20px 0;
+    display: flex;
+    justify-content: end;
+    
+    z-index: 2;
+    top: 20px;
+    
+  }
+  nav ul{
+    flex: 1;
+  
+  }
+  nav ul li ,.btn{
+    display: inline-block;
+    /* background-color: rgba(172, 78, 255, 0.199); */
+    height: 40px;
+   padding: 2px;
+   border-radius: 10px;
+   
+   /* box-shadow: 2px 2px 8px rgb(171, 62, 255); */
+  }
+
+  .btn{
+    margin: 5px;
+  }
+  nav ul li a{
+    color: rgb(251, 248, 255);
+    text-decoration: none;
+    font-size: 10px;
+  
+  }
+  
+  
+  .btn{
+    color: rgb(232, 231, 247);
+    text-decoration: none;
+    border: solid  rgb(150, 70, 255) 1px;
+    margin-right: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    backdrop-filter:blur(10px);
+    box-shadow: 2px 2px 5px rgb(153, 0, 255);
+    font-size: 20px;
+  
+  }
+  .btn:hover{
+    background:linear-gradient(to top left,rgba(113, 8, 113, 0.79),rgba(0, 0, 0, 0.658));
+    box-shadow: 0 0 5px rgb(19, 2, 255),0 0 25px #1707f8,0 0 50px #5307f6,0 0 200px #470757;
+  }
+  

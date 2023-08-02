@@ -1,0 +1,262 @@
+@import url("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css");
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+ .contact
+{
+    background: url("../img/bgimg.jpg");
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-image: url(bg3.jpg); */
+    background-size: cover;
+    
+} 
+.contact::after
+{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    background-color: rgba(0,0,0,0.90);
+   
+
+}
+.content
+{
+    margin-top: -100px;
+    max-width: 600px;
+    text-align: center;
+    z-index: 5;
+    
+}
+.contact .content h2
+{
+    
+    font-weight: 500;
+    color: #e079ff;
+    font-size:50px;
+   
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px 3px rgb(198, 93, 255);
+}
+
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    line-height: 30px;
+    flex-direction: column;
+    z-index: 5;
+
+}
+
+.container .contactInfo .box
+{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+    z-index: 5;
+
+}
+#mail
+{
+    padding-left: -20px;
+}
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+    background: #a723ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 21px;
+    z-index: 5;
+
+}
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+    z-index: 5;
+    color: #faf8f8;
+
+
+}
+.container .contactInfo .box .text h3
+{
+    font-weight: 500;
+    color: #e8e7ed;
+    z-index: 5;
+}
+.contactForm
+{
+    width: 40%;
+    padding: 40px;
+    background:linear-gradient(to top left,black,rgba(155, 15, 249, 0.58));
+    margin-left: 100px;
+    z-index: 5;
+    height: 540px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 12px rgb(203, 72, 255);
+    margin-bottom: -5px;
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #f7f5f9;
+    font-weight: 500;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    color: #ffffff94;
+
+
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    min-width: 100%;
+    max-width: 100%;
+
+    padding: 10px 10px;
+    font-size: 18px;
+    margin: 8px 0;
+    border: none;
+    max-height: 100px;
+    box-shadow: 2px 2px 3px #c35bff;
+    outline: none;
+    border-radius: 5px;
+    min-height: 35px;
+}
+.contactForm .inputBox input{
+    height: 40px;
+  
+}
+.contactForm .inputBox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+/* .contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color: #6e65c0;
+    font-size: 12px;
+    transform: translate(20px);
+} */
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #6f0ac284;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media screen and (max-width:1000px)
+{
+    .contact
+    {
+        padding: 50px;
+    }
+    .container
+    {
+        flex-direction: column;
+    }
+    .container .contactInfo
+    {
+        margin-bottom: 40px;
+    }
+    .container .contactInfo,
+    .contactForm
+    {
+        width: 80%;
+        margin-left: 0;
+    }
+} 
+.navbar{
+    /* background: linear-gradient(to top left, rgba(61, 5, 61, 0.386), rgba(0, 0, 0, 0.479)); */
+    
+ 
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content:end;
+    gap: 10px;
+    z-index: 5;
+   
+}
+nav ul{
+    flex: 1;
+    margin-top: -85px;
+    margin-right: -60px;
+
+}
+nav ul li ,.btn{
+    display: inline-block;
+    margin: 10px 20px;
+    box-shadow: 2px 2px 3px rgb(255, 79, 255);
+    padding: 10px;
+    border-radius: 15px;
+
+}
+nav ul li a{
+    color: rgb(214, 207, 223);
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+
+.btn{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: solid  whitesmoke 1px;
+    
+    padding: 10px 30px;
+   
+    backdrop-filter:blur(10px);
+    box-shadow: 2px 2px 5px;
+    font-size: 20px;
+
+}
+.btn:hover{
+    background:linear-gradient(to top left,rgba(113, 8, 113, 0.79),rgba(0, 0, 0, 0.658));
+    box-shadow: 0 0 5px rgb(227, 223, 227),0 0 25px #e2dfdf,0 0 50px #e7dee0,0 0 200px #470757;
+}

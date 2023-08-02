@@ -1,0 +1,269 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+   
+  }
+ .bg1{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background: fixed;
+  position: relative;
+   
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/kurukshtra/bg.jpg");
+   background-size:cover;
+   /* position: fixed; */
+   
+
+
+  }
+.bg1::after{
+  content: '';
+  position: fixed;
+  width: 205%;
+  height: 205%;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0,0,0,0.81);
+  
+}
+
+
+
+  .card {
+    width:240px ;
+    height: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 36px;
+    perspective: 2500px;
+    margin: 0px 40px;
+   
+    z-index: 2;
+    margin-left: 5px;
+    top:50px;
+   
+  }
+  
+  .cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .wrapper {
+    transition: all 0.5s;
+    position: absolute;
+    width: 100%;
+    box-shadow: 3px 3px 7px ;
+    z-index: -1;
+  }
+  
+  .card:hover .wrapper {
+    transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+    box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  }
+  
+  .wrapper::before,
+  .wrapper::after {
+    content: "";
+    opacity: 0;
+    width: 100%;
+    height: 80px;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+  }
+  
+  .wrapper::before {
+    top: 0;
+    height: 100%;
+    background-image: linear-gradient(
+      to top,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+  .wrapper::after {
+    bottom: 0;
+    opacity: 1;
+    background-image: linear-gradient(
+      to bottom,
+      transparent 46%,
+      rgba(12, 13, 19, 0.5) 68%,
+      rgba(12, 13, 19) 97%
+    );
+  }
+  
+  .card:hover .wrapper::before,
+  .wrapper::after {
+    opacity: 1;
+  }
+  
+  .card:hover .wrapper::after {
+    height: 120px;
+  }
+  .title {
+    width: 100%;
+    transition: transform 0.5s;
+  }
+  .card:hover .title {
+    transform: translate3d(0%, -50px, 100px);
+  }
+  
+  .character {
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .card:hover .character {
+    opacity: 1;
+    transform: translate3d(0%, -30%, 100px);
+  }
+
+ 
+ #ffchar
+ {
+  height: 300px;
+  width: 250px;
+ }
+ #valologo
+ {
+  width: 300px;
+  height: 310px;
+ }
+ #valo
+ {
+  height: 360px;
+  width: 240px;
+ }
+ #apexchar
+ {
+  height: 320px;
+  width: 250px;
+  
+ }
+ #bgmichar
+ {
+  height: 310px;
+  width: 200px;
+ }
+ #ff
+ {
+  height: 360px;
+
+ }
+ #apex1
+ {
+  height: 360px;
+ }
+ #apex1
+ {
+  position: relative;
+ }
+ .pri
+ {
+  height: 30px;
+  margin-bottom: 310px;
+  background-color: rgba(14, 14, 15, 0.635);
+  padding: 5px;
+  border-radius: 7px;
+
+ }
+ .title
+ {
+  margin-bottom: 20px;
+ }
+ #cod
+ {
+  height: 260px;
+  width: 250px;
+ }
+#codtitle
+{
+  height: 70px;
+  width: 150px;
+  margin-left: 20px;
+}
+
+ 
+ 
+
+ 
+ .heading img
+ {
+  position: absolute;
+  height: 120px;
+  width: 380px;
+  top: 25px;
+  left: 36%;
+  z-index: 2;
+
+ }
+ .navbar{
+  /* background: linear-gradient(to top left, rgba(61, 5, 61, 0.386), rgba(0, 0, 0, 0.479)); */
+  
+ position: absolute;
+  width: 100%;
+  
+  padding: 20px 0;
+  display: flex;
+  justify-content: end;
+
+  z-index: 2;
+  top: 20px;
+  
+}
+nav ul{
+  flex: 1;
+
+}
+nav ul li ,.btn{
+  display: inline-block;
+  
+  /* background-color: rgba(172, 78, 255, 0.199); */
+  height: 40px;
+ padding: 2px;
+ border-radius: 10px;
+ 
+ /* box-shadow: 2px 2px 8px rgb(171, 62, 255); */
+}
+nav ul li a{
+  color: rgb(251, 248, 255);
+  text-decoration: none;
+  font-size: 10px;
+
+}
+
+
+.btn{
+  color: rgb(232, 231, 247);
+  text-decoration: none;
+  border: solid  rgb(150, 70, 255) 1px;
+  margin-right: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  backdrop-filter:blur(10px);
+  box-shadow: 2px 2px 5px rgb(153, 0, 255);
+  font-size: 20px;
+
+}
+.btn:hover{
+  background:linear-gradient(to top left,rgba(113, 8, 113, 0.79),rgba(0, 0, 0, 0.658));
+  box-shadow: 0 0 5px rgb(19, 2, 255),0 0 25px #1707f8,0 0 50px #5307f6,0 0 200px #470757;
+}
